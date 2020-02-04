@@ -138,7 +138,7 @@ button {
 
 }
 
-.header__contact .btn_primary {
+.btn_primary {
     background: #EB9411;
     border-radius: 5px;
     color: #fff;
@@ -364,7 +364,7 @@ button {
     background-size: cover;
     height: 398px;
     color: #fff;
-    
+    border-radius: 5px;
 
 }
 
@@ -390,6 +390,7 @@ button {
 
 .footer {
     background: #3C414D;
+    color: #D6E8F1;
 }
 .footer__inner {
     display: flex;
@@ -411,14 +412,68 @@ button {
     color: #659EBC;
 
 }
-
-
+.footer__menu-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-bottom: 14px;
+}
+.footer__menu a{
+    font-size: 21px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #D6E8F1;
+}
+.footer__contacts{
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    
+}
+.footer__contacts__title{
+    padding-bottom: 14px;
+}
+.footer__contacts-number{
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: #EB9411;
+}
+.footer__form-desc{
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 18px;
+}
+.form__input{
+    background: #FFFFFF;
+    border: 1px solid #626262;
+    border-radius: 2px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 19px;
+    color: #D6E8F1;
+    padding: 12px 14px;
+    display: block;
+    width: 302px;
+    margin-bottom: 20px;
+}
+.form__btn {
+    display: block;
+    border: none;
+    width: 302px;
+    border-radius: 2px;
+    outline: none;
+    margin: 0;
+}
 
 
 @media screen and (max-width:1360px) {
     .natural-food__item {
         flex-basis: 385px;
         height: 385px;
+    }
+    .lifestyle__item{
+        flex-basis: 262px;
     }
 }
 
@@ -448,6 +503,9 @@ button {
     }
     .natural-food__item-title {
         top: 160px;
+    }
+    .lifestyle__item{
+        flex-basis: 220px;
     }
 
 }
@@ -548,6 +606,30 @@ button {
     .natural-food__item-title {
         top: 190px;
     }
+    .lifestyle__items {
+        justify-content: space-around;
+    }
+    .lifestyle__item{
+        flex-basis: 320px;
+        margin-bottom: 30px;
+    }
+    .natural-food__title,
+    .lifestyle-title {
+        text-align: center;
+    }
+    .footer__inner{
+        flex-wrap: wrap;
+    }
+    .footer__form{
+        width: 100%;
+    }
+    .footer__form-desc{
+        text-align: right;
+    }
+    .form__input,
+    .form__btn {
+        margin-left: auto;
+    }
 
 }
 
@@ -569,6 +651,10 @@ button {
     .natural-food__item-description {
         overflow-y: scroll;
     }
+    .lifestyle__item{
+        flex-basis: 300px;
+
+    }
 }
 
 @media screen and (max-width:668px) {
@@ -578,6 +664,9 @@ button {
     }
     .natural-food__item-title {
         top: 130px;
+    }
+    .lifestyle__item{
+        flex-basis: 270px;
     }
 }
 
@@ -608,15 +697,26 @@ button {
         line-height: 25px;
         padding: 0px 38px 112px 38px;
     }
-    .natural-food__title {
-        text-align: center;
-    }
     .natural-food__item {
         flex-basis: 300px;
         height: 300px;
     }
     .natural-food__item-title {
         top: 160px;
+    }
+    .lifestyle__item{
+        flex-basis: 300px;
+    }
+    .footer__inner{
+        display: block;
+        text-align: center;
+    }
+    .footer__form-desc{
+        text-align: center;
+    }
+    .form__input,
+    .form__btn {
+        margin-right: auto;
     }
     
 
